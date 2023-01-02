@@ -6,17 +6,11 @@ import pt from './pt/common.json';
 import cv from './cv/common.json';
 
 i18n.use(initReactI18next).init({
-     compatibilityJSON:'v3',
-     lng: 'cv',
-     fallbackLng: 'cv',
-     resources: {
-        en: en,
-        pt: pt,
-        cv: cv
-     },
-     interpolation: {
-        escapeValue: false
-     }
+  compatibilityJSON: 'v3',
+  lng: 'en',
+  fallbackLng: 'cv',
+  resources: {en: en, pt: pt, cv: cv},
+  interpolation: {escapeValue: false},
 });
 
 export default i18n;
